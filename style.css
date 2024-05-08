@@ -1,0 +1,540 @@
+html{
+  font-family: 'Roboto';
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.containerPokemonBig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50px;
+  width: 450px;
+  height: 800px;
+}
+
+.categoryCardBig{
+  font-size: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pElementAbout{
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#BigCardContent{
+  width: 400px;
+  max-height: 700px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.moves{
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 10px;
+  margin: 2px;
+  max-height: 20px;
+}
+
+
+#pokedexNumber{
+  font-size: 30px;
+}
+
+.dialogContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 0.4);
+}
+
+.typeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#typeText {
+  color: white;
+  margin: 0;
+  border: 1px white solid;
+  border-radius: 10px;
+  padding: 3px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.imageArrows {
+  height: 15px;
+  cursor: pointer;
+}
+
+.changeCardBigContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#containerPokemonBigTopPart {
+  height: 500px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 24px;
+}
+
+#pokemonName {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#pokemonImage {
+  height: 300px;
+  width: 300px;
+  margin-top: -270px;
+}
+
+.containerPokemonBigBottomPart {
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 40px;
+  min-height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#type {
+  padding: 24px;
+}
+
+.d-none {
+  display: none;
+}
+
+.closeImage {
+  height: 40px;
+  cursor: pointer;
+}
+
+.TextContainerCardBig {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-top: -40px;
+}
+
+/* Style für die Einzelansicht*/
+
+.pokeballImage {
+  height: 120px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  box-shadow: 29px 29px 42px #d9d9d9, -29px -29px 42px #e7e7e7;
+  border: solid rgb(226, 224, 224) 1px;
+  margin-bottom: 100px;
+}
+
+.headerHeadline{
+  font-size: 40px;
+}
+
+input {
+  border-radius: 30px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: solid rgb(226, 224, 224) 1px;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+/* Style für Header */
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pokemonContainerSmall {
+  border: solid rgb(226, 224, 224) 1px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #d9d9d9, -3px -3px 5px #e7e7e7;
+  width: 200px;
+  min-width: 200px;
+}
+
+#pokemonImageSmall:hover{
+    transform: scale(1.3);
+}
+
+#pokemonImageSmall {
+  height: 130px;
+  margin-bottom: 16px;
+  position: absolute;
+  z-index: 5;
+  transition: transform 0.4s ease-out;
+  cursor: pointer;
+}
+
+.containerImageSmall {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.pokeballTransparent{
+  z-index: 3;
+  height: 160px;
+  opacity: 0.4;
+  position: relative;
+  padding-left: 80px;
+}
+
+.pokeballTransparentContainer{
+  width: 100%;
+  z-index: 3;
+}
+
+#pokemonCardSmallName {
+  color: white;
+  margin: 0;
+}
+
+#pokedexNumberCardSmall {
+  color: white;
+  margin: 0;
+}
+
+.TextContainerCardSmall {
+  display: flex;
+  width: 100%;
+  margin-right: 10px;
+  align-items: center;
+  gap: 20px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#typeCardSmall {
+  color: white;
+  margin: 0;
+  border: 1px white solid;
+  border-radius: 10px;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+
+.loadButton {
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.loadButton:hover {
+  background-color: #ffaa00;
+}
+
+.loadButtonContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+/* Button CSS*/
+
+#myChart {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Styles für das Pokémon-Design als Spinner */
+
+.pokemon {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(to bottom, rgb(254, 0, 1) 50%, white 50%);
+  border-radius: 50%;
+  border: 8px solid black;
+  animation: spin 1s linear infinite;
+}
+
+.pokemon::before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100px;
+  background: black;
+  top: 50px;
+  transform: translateY(-50%);
+}
+
+.pokemon::after {
+  content: '';
+  position: absolute;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background: white;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 0 8px black, inset 0 0 0 10px white, inset 0 0 0 12px black;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media(max-width: 560px){
+  .headerHeadline{
+    display: none;
+  }
+
+  header{
+    gap: 20px;
+  }
+
+  #BigCardContent{
+    overflow-y: auto;
+  }
+
+  .containerPokemonBig{
+    width: 400px;
+    height: 650px;
+  }
+
+  #BigCardContent{
+    width: 350px;
+    max-height: 650px;
+  }
+
+  .pElementAbout{
+    font-size: 20px;
+  }
+
+  #pokemonName{
+    font-size: 45px;
+  }
+
+  #pokedexNumber{
+    font-size: 25px;
+  }
+
+  #typeText{
+    font-size: 25px;
+  }
+
+  #pokemonImage{
+    height: 250px;
+    width: 250px;
+    margin-top: -220px;
+  }
+
+  .TextContainerCardBig{
+    padding-top: 0px;
+  }
+
+  .containerPokemonBigBottomPart{
+    min-height: 350px;
+  }
+}
+
+@media(max-width: 450px){
+
+  .containerPokemonBig{
+    width: 350px;
+    height: 550px;
+  }
+
+  #BigCardContent{
+    width: 300px;
+    max-height: 600px;
+  }
+
+  .pElementAbout{
+    font-size: 20px;
+  }
+
+  #pokemonName{
+    font-size: 40px;
+  }
+
+  #pokedexNumber{
+    font-size: 20px;
+  }
+
+  #typeText{
+    font-size: 20px;
+  }
+
+  #pokemonImage{
+    height: 200px;
+    width: 200px;
+    margin-top: -180px;
+  }
+
+  .TextContainerCardBig{
+    padding-top: 0px;
+  }
+
+  .containerPokemonBigBottomPart{
+    min-height: 300px;
+  }
+}
+
+@media(max-width: 390px){
+
+  .containerPokemonBig{
+    width: 300px;
+    height: 550px;
+  }
+
+  #BigCardContent{
+    width: 280px;
+    max-height: 600px;
+  }
+
+  .pElementAbout{
+    font-size: 20px;
+  }
+
+  #pokemonName{
+    font-size: 40px;
+  }
+
+  #pokedexNumber{
+    font-size: 20px;
+  }
+
+  #typeText{
+    font-size: 20px;
+  }
+
+  #pokemonImage{
+    height: 200px;
+    width: 200px;
+    margin-top: -180px;
+  }
+
+  .TextContainerCardBig{
+    padding-top: 0px;
+  }
+
+  .containerPokemonBigBottomPart{
+    min-height: 300px;
+  }
+}
+
+@media(max-width: 340px){
+
+  .containerPokemonBig{
+    width: 280px;
+    height: 550px;
+  }
+
+  #BigCardContent{
+    width: 270px;
+    max-height: 600px;
+  }
+
+  .pElementAbout{
+    font-size: 20px;
+  }
+
+  #pokemonName{
+    font-size: 30px;
+  }
+
+  #pokedexNumber{
+    font-size: 20px;
+  }
+
+  #typeText{
+    font-size: 20px;
+  }
+
+  #pokemonImage{
+    height: 200px;
+    width: 200px;
+    margin-top: -180px;
+  }
+
+  .TextContainerCardBig{
+    padding-top: 10px;
+  }
+
+  .containerPokemonBigBottomPart{
+    min-height: 300px;
+  }
+}
+
+
+

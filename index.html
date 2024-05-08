@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="icon" type="image/x-icon" href="./img/pokeballIcon.png">
+  </head>
+  <body onload="loadPokemon()">
+    <header>
+
+      <img class="pokeballImage" src="./img/pokeball.png"/>
+      <h1 class="headerHeadline">Pokédex</h1>
+      <input
+        type="text"
+        placeholder="Pokemon suchen..."
+        id="searchInput"
+        oninput="searchPokemon()"
+      />
+
+      <!-- mit den Befehl oninput wird die Funktion ausgeführt sobald im Input Feld etwas geändert wird (Notitzen eintragen) -->
+    </header>
+
+    <div id="content"></div>
+    <div id="dialogContainer" class="dialogContainer d-none"></div>
+
+    <div id="spinner" class="pokemon"></div>
+
+    <div class="loadButtonContainer">
+      <button onclick="loadMorePokemon()" class="loadButton">
+        Load More Pokemon...
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

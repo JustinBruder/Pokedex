@@ -1,0 +1,67 @@
+.bg-grass{
+    background-color: #81C784;
+}
+
+.bg-fire{
+    background-color: #FF7F5E;
+}
+
+.bg-water{
+    background-color: #64B3FF;
+}
+
+.bg-bug{
+    background-color: #B0C04E;
+}
+
+.bg-normal{
+    background-color: #F66C6D;
+}
+
+.bg-poison{
+    background-color: #A065FC;
+}
+
+.bg-electric{
+    background-color: #FFD700;
+}
+
+.bg-ground{
+    background-color: #C2A18C;
+}
+
+.bg-fairy{
+    background-color: #FFC8C8;
+}
+
+.bg-fighting{
+    background-color: #C74040;
+}
+
+.bg-psychic{
+    background-color: #F48FB3;
+}
+
+.bg-rock{
+    background-color: #8C8B8A;
+}
+
+.bg-ghost{
+    background-color: #8180BE;
+}
+
+.bg-dragon{
+  background-color: #5C41C9;
+}
+
+.bg-ice{
+  background-color: #97D9D9;
+}
+
+.bg-dark{
+  background-color: #6B5451;
+}
+
+.bg-steel{
+  background-color: #B7B7B7;
+}
